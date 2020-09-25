@@ -18,8 +18,8 @@ const Short = () => {
             .finally()
         }
         const {hashid, url} = shortUrl
-        console.log(hashid, url)
-    return (
+
+        return (
         <div> 
            <form onSubmit={handleSubmit(onShort)}>
                 <input 
@@ -37,7 +37,7 @@ const Short = () => {
                 {errors.url && errors.url.message}
                  <button type="submit"> Shorten It!</button>
            </form>
-           <LinkBox />
+           <LinkBox hashid={hashid} url={url}/>
         </div>
     )
 }
