@@ -37,7 +37,7 @@ const Short = () => {
                 {errors.url && errors.url.message}
                  <button type="submit"> Shorten It!</button>
            </form>
-           <LinkBox hashid={hashid} url={url}/>
+               <LinkBox hashid={hashid} url={url} />
         </div>
     )
 }
